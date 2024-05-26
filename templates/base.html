@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Macminded</title> 
+
+  <link rel="alternate" href="/feed/atom.xml" type="application/atom+xml">
+
+  <link rel="stylesheet" href="/style.css">
+  
+  <!-- FONTS ADOBE -->
+  <!--<link rel="stylesheet" href="https://use.typekit.net/ylr4gah.css">-->
+
+</head>
+
+<body>
+    <header>
+		<a style="width:100%;height:auto;" href="/" class="home-link">
+			<img src="/img/mm-logo.png" width="247" height="auto">
+		</a>
+
+      	<nav>
+			<ul class="nav">
+				<!--<li class="nav-item"><a href="/">home</a></li>-->
+				<li class="nav-item"><a href="/blog">archive</a></li>
+				<li class="nav-item"><a href="/articles">articles</a></li>					
+				<li class="nav-item"><a href="/about">about</a></li>					
+				<li class="nav-item"><a href="/tags">tags</a></li>
+			</ul>
+		</nav>
+	</header>
+    
+    <main>
+
+	{% block content %} 
+		{% block title %}
+			{{ taxonomy.name | capitalize }} &middot; {{ config.title }}
+		{% endblock title %}
+
+		<h1>{{ taxonomy.name | capitalize }}</h1>
+	  
+		<ul>
+		  {% for page in terms %}
+			<li><a href="{{ page.permalink }}">{{ page.name | capitalize }}</a></li>
+		  {% endfor %}
+		</ul>
+	{% endblock content %}
+
+    </main>
+    
+	{% include "partials/footer.html" %}
+
+</body>
+
+</html>
