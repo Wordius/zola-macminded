@@ -15,7 +15,7 @@ generate_feed = true
 # Taxonomies
 
 taxonomies = [
-    {name = "tags", paginate_by = 3, rss = true },
+    {name = "tags", paginate_by = 10, rss = true },
 ]
 
 # Build a search index to be used later on by a JavaScript library
