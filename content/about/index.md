@@ -8,4 +8,4 @@ I’ve been out of the loop for some time now, but the cost of apps appears to h
 
 Buying software used to be like buying a car – you paid the bulk of your money up front then drip fed it as time went on to keep it on the road. Eventually you might have to upgrade to a newer model. Now there is one point of entry, and you’re in, but those upgrades, small as they are, are paid for via your subscription. Same every month, same every year. And all an app might get at the end of the year is a shiny new bell that you don’t need or won’t use.
 
-There must be another way. There is, it’s called free software. It’s out there, you just have it know where to look. This site is here to help.
+There must be another way. There is, it’s called free software. It’s out there, you just have to know where to look. This site is here to help.
