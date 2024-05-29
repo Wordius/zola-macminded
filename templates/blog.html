@@ -1,27 +1,16 @@
 {% extends "base.html" %}
 
 {% block content %}
-<!--<article class="post">-->
-  <h1 class="title">
+
+<h1 class="title">
     {{ section.title }}
-  </h1>
-<!--<ul>
-    {% for page in section.pages %}
-    <li>
-      <div class="postlist-head">
-        <h2>
-          <a href="{{ page.permalink | safe }}">{{ page.title }}</a>
-        </h2>
-      </div>
-      <div class="postlist-date">
-        <p><time datetime="{{ page.date }}">{{ page.date | date(format="%d %B %Y") }}</time></p>
-      </div>
-      <p class="postlist-description">{{ page.description }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-</article>
--->
+</h1>
+
+<div class="page-intro">
+  <p class="larger">My old blog, <a href="https://wordius.com">wordius.com</a>, served up posts till November 2015 when I stopped writing for many reasons – too much work being the main one. I also got out of the habit of writing for the web.</p>
+  <p class="larger">The aim is to continue that writing in a similar vein, but with more of a focus on free and open source software. That’s the plan anyway.</p>
+</div>
+
 <!-- PAGINATOR -->
 {% if paginator %}
 <div>
